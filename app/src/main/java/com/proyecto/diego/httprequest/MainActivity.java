@@ -14,17 +14,5 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        String json = "{" +
-                        "id: 0," +
-                        "city: {" +
-                            "id: 1," +
-                            "name: 'London'" +
-                        "}"+
-                    "}";
-
-
-        Gson gson = new Gson();
-        Town town = gson.fromJson(json, Town.class);
-        //Toast.makeText(this,town.getId() + "--" + town.getName(),Toast.LENGTH_SHORT).show();
     }
 }
